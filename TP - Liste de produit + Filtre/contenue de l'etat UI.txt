@@ -1,0 +1,46 @@
+Pensez à toutes les données de notre application. On a :
+
+- La liste des produits
+- Le texte de recherche saisi par l’utilisateur
+- La valeur de la case à cocher
+- La liste filtrée des produits
+
+Passons-les en revue pour déterminer lesquelles 
+constituent notre état. Posez-vous ces trois questions pour chaque donnée :
+
+Est-elle passée depuis un parent via les props ? 
+ Si oui, ce n’est probablement pas de l’état.
+
+Est-elle figée dans le temps ?
+ Si oui, ce n’est probablement pas de l’état.
+
+Pouvez-vous la calculer en vous basant sur le reste de l’état ou les props de votre composant ?
+ Si oui, ce n’est pas de l’état.
+
+
+La liste des produits est passée via les props, ce n’est donc pas de l’état.
+ 
+Le texte de recherche et la case à cocher semblent être de l’état 
+puisqu’ils changent avec le temps et ne peuvent être calculés à partir d’autre chose.
+ 
+Enfin, la liste filtrée des produits ne constitue pas de l’état 
+puisqu’elle peut être calculée en combinant la liste originale des produits 
+avec le texte de recherche et la valeur de la case à cocher.
+
+Au final, notre état contient :
+
+- Le texte de recherche saisi par l’utilisateur
+Composant affiché selon cet état :
+    ListProducts
+    SearchBar
+Ancêtre commun :
+    appSearch
+
+
+- La valeur de la case à cocher
+Composant affiché selon cet état :
+    ListProducts
+    SearchBar
+Ancêtre commun :
+    appSearch
+

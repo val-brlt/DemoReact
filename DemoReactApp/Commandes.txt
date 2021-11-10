@@ -1,0 +1,14 @@
+Créer un app React
+npx create-react-app [nom-app]
+
+Lancer le serveur de l'app react
+npm start
+
+Exporter/Générer fichier statique
+npm run build
+
+Lancer les tests
+npm run test
+
+Supprimer le template et exporter la configuration
+npm run eject

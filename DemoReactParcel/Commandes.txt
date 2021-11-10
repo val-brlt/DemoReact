@@ -1,0 +1,17 @@
+PARCEL REACT
+
+Générer un fichier package.json
+npm init -y
+
+installer un module
+npm add react react-dom
+
+Installer parcel sur le projet
+npm add -D parcel-bundler //V1 DEPEPRECIATEd
+
+
+Lance un serveur
+npx parcel index.html
+
+Produire son fichier/ dossier build
+npx parcel build index.html
